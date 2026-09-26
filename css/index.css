@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+}
+
+.btn-link {
+    color: #3C3C3C;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 28px;
+    transition: all 0.1s linear;
+}
+.btn-link:hover {
+    color: #865fc5;
+}
+
+.point {
+    color: #767676;
+    margin: 0px;
+    padding-left: 11px;
+
+}
+
+.header {
+    background-image: url(../image/glavfon.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.conteiner {
+    display:flex;
+	justify-content: center;
+	padding-top: 0;
+}
+.header__main {
+    display:flex;
+    align-items: center;
+    list-style: none;
+    padding-left: 0px;
+    gap: 1rem;
+    margin: 0px;
+}
+
+.nominaciya {
+    font-weight: 800;
+}
+
+hr {
+    opacity: 20%;
+}
+
+.header-zagolovok {
+    display: flex;
+    justify-content: center;
+    height: calc(85vh - 100px);
+    align-items: center;
+}
+
+.header-title {
+    font-size: 90px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 65px;
+}
+
+.title-text {
+    color: rgb(220, 135, 44);
+    background: linear-gradient(to right, #FE6110, #f60454);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header-subtitle {
+    color: #3C3C3C;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.main-background-wave {
+    position: relative;
+}
+
+.custom-shape-divider-bottom-1715670634 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 5;
+}
+
+.custom-shape-divider-bottom-1715670634 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-bottom-1715670634 .shape-fill {
+    fill: url(#MyGradient);
+}
+
+.custom-shape-divider-bottom-2 {
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 2;
+    /* transform: rotate(-1.5deg); */
+}
+
+.custom-shape-divider-bottom-2 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 18.3px);
+    height: 118px;
+}
+
+.custom-shape-divider-bottom-2 .shape-fill {
+    fill: url(#MyGradient2);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right, #0E0C1B, #52202C);
+}
+
+.main-header {
+    color: #FF565B;
+    letter-spacing: 0.8px;
+    font-weight: 600;
+    padding: 8px 40px 8px 40px;
+    border-radius: 10px;
+    transform: scale(1.4);
+    background: linear-gradient(to right, #2E1A21, #3F1A2B);
+}
+
+.main-cards {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 3rem;
+    margin-bottom: 7rem;
+}
+
+.card {
+    background-color: #3C3C3C;
+    width: 300px;
+    height: 450px;
+    border-radius: 25px;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+}
+
+.caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.caption h1 {
+    color: #bfbfbf;
+    font-weight: 600;
+    letter-spacing: 2px
+}
+
+.card:hover .caption {
+    opacity: 1;
+    background: rgba(0,0,0,0.6);
+}
+
+.main-background-wave-top {
+    position: relative;
+}
+
+.custom-shape-divider-top-1716617098 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1716617098 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 82px;
+}
+
+.custom-shape-divider-top-1716617098 .shape-fill {
+    fill: url(#MyGradient-top);
+}
+
+
+.footer {
+    background-image: url(../image/footer2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer h2 {
+    font-size: 35px;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #FE6110 40%, #f60454 60%);
+    background-clip: text;
+    color: transparent;
+}
+
+.footer-text {
+    color: #3C3C3C;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.footer-link {
+    font-weight: 650;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding-right: 12px;
+}
+
+.footer img {
+    transform: scale(0.8);
+}

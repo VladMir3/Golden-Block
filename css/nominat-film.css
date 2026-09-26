@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&display=swap');
+
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-link {
+    color: #3C3C3C;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 28px;
+    transition: all 0.1s linear;
+}
+.btn-link:hover {
+    color: #865fc5;
+}
+
+.point {
+    color: #767676;
+    margin: 0px;
+    padding-left: 11px;
+}
+
+.header {
+    height: 100vh;
+    background-image: url(../image/fongolosovania.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.conteiner {
+    display:flex;
+	justify-content: center;
+	padding-top: 0;
+    background-color: #D9D9D9;
+}
+.header__main {
+    display:flex;
+    align-items: center;
+    list-style: none;
+    padding-left: 0px;
+    gap: 1rem;
+    margin: 0px;
+}
+
+.nominaciya {
+    font-weight: 800;
+}
+
+/* ------------------------------------------------ */
+
+.voting-nomination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteiner-voting > h2 {
+    color: white;
+    font-size: 37px;
+    font-weight: 800;
+}
+
+.color-title {
+    color: #5E6AEF;
+}
+
+.window-voting {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    padding: 5px 10px 5px 5px;
+    background-color: #24252D;
+    border-radius: 15px;
+}
+
+.nominant-list input {
+    display: none;
+}
+
+.nominant-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nominant-list label {
+    cursor: pointer;
+    width: 98%;
+    display: block;
+    padding: 0.6rem 0.5rem;
+    background-color: #2A2B36;
+    border-radius: 30px;
+}
+
+.nominant-list label img {
+    height: 8%;
+    width: 8%;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.nominant-list label span {
+    color: #ffffff;
+    font-family: "Akshar", sans-serif;
+    font-size: 25px;
+    letter-spacing: 1px;
+    padding-left: 10px;
+}
+
+.nominant-list label:hover {
+    background-color: #333440;
+}
+
+input[type="radio"]:checked + label {
+    background-image: linear-gradient(to right, #E87534 10%, #EA1D4E 90%);
+}
+
+/* -------------Инфо блок--------------- */
+
+.info-block {
+    margin-left: 15px;
+    width: 320px;
+    height: 500px;
+    background-color: #24252D;
+    border-radius: 10%;
+    overflow: hidden;
+}
+
+.info-block > img {
+    width: 320px;
+}
+
+.info-block-text {
+    padding: 15px;
+}
+
+.info-block-text-sub {
+    color: #FFFFFF;
+    font-size: 21px;
+}
+
+.info-block-text-title {
+    color: #B9B9B9;
+}
+
+.info-block-button {
+    outline: none;
+    border: none;
+    padding: 12px 40px;
+    background-color: #FF4A50;
+    color: #FFFFFF;;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 54px;
+    margin-top: 10px;
+    transition: all 0.1s linear;
+}
+
+.info-block-button:hover {
+    background-color: #c1393e;
+}
+
+#radio1:checked ~ .info-block { 
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
